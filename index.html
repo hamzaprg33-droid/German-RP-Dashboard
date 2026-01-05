@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>German RP – Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>German RP</h1>
+
+    <div class="tabs">
+        <button onclick="showTab('login')" id="loginTab" class="active">Login</button>
+        <button onclick="showTab('register')" id="registerTab">Registrieren</button>
+    </div>
+
+    <!-- LOGIN -->
+    <div id="login" class="tab-content">
+        <h2>Login</h2>
+        <form>
+            <input type="text" placeholder="Benutzername" required>
+            <input type="password" placeholder="Passwort" required>
+            <button type="submit">Einloggen</button>
+        </form>
+    </div>
+
+    <!-- REGISTER -->
+    <div id="register" class="tab-content hidden">
+        <h2>Registrieren</h2>
+        <form>
+            <input type="text" placeholder="Benutzername" required>
+            <input type="email" placeholder="E-Mail-Adresse" required>
+            <input type="text" placeholder="Discord Benutzer-ID" required>
+            <input type="password" placeholder="Passwort" required>
+
+            <label class="checkbox">
+                <input type="checkbox" required>
+                Ich habe die <a href="datenschutz.html" target="_blank">Datenschutzerklärung</a> gelesen und akzeptiere sie.
+            </label>
+
+            <button type="submit">Registrieren</button>
+        </form>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
