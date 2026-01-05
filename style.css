@@ -5,14 +5,14 @@ body {
 }
 
 .container {
-    width: 400px;
+    width: 420px;
     margin: 80px auto;
     background: #1e293b;
     padding: 25px;
-    border-radius: 10px;
+    border-radius: 12px;
 }
 
-h1 {
+h1, h2 {
     text-align: center;
 }
 
@@ -46,7 +46,7 @@ form input {
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
-    border-radius: 5px;
+    border-radius: 6px;
     border: none;
 }
 
@@ -56,14 +56,16 @@ button {
     background: #3b82f6;
     border: none;
     color: white;
-    border-radius: 5px;
+    border-radius: 6px;
     cursor: pointer;
 }
 
 .checkbox {
     font-size: 14px;
+    margin-bottom: 10px;
 }
 
 .checkbox a {
     color: #60a5fa;
+    text-decoration: underline;
 }
