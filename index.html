@@ -2,12 +2,12 @@
 <html lang="de">
 <head>
     <meta charset="UTF-8">
-    <title>German RP – Login</title>
+    <title>German RP – Team Login</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div class="container">
+<div class="box">
     <h1>German RP</h1>
 
     <div class="tabs">
@@ -16,32 +16,31 @@
     </div>
 
     <!-- LOGIN -->
-    <div id="login" class="tab-content">
-        <h2>Login</h2>
-        <form>
-            <input type="text" placeholder="Benutzername" required>
-            <input type="password" placeholder="Passwort" required>
-            <button type="submit">Einloggen</button>
-        </form>
+    <div id="login">
+        <input id="loginName" placeholder="Benutzername">
+        <input id="loginPass" type="password" placeholder="Passwort">
+        <button>Login</button>
     </div>
 
     <!-- REGISTER -->
-    <div id="register" class="tab-content hidden">
-        <h2>Registrieren</h2>
-        <form>
-            <input type="text" placeholder="Benutzername" required>
-            <input type="email" placeholder="E-Mail-Adresse" required>
-            <input type="text" placeholder="Discord Benutzer-ID" required>
-            <input type="password" placeholder="Passwort" required>
+    <div id="register" class="hidden">
+        <input id="regName" placeholder="Benutzername">
+        <input id="regMail" type="email" placeholder="E-Mail">
+        <input id="regDiscord" placeholder="Discord Benutzer-ID">
+        <input id="regPass" type="password" placeholder="Passwort">
 
-            <label class="checkbox">
-                <input type="checkbox" required>
-                Ich habe die <a href="datenschutz.html" target="_blank">Datenschutzerklärung</a>
-                gelesen und akzeptiere sie.
-            </label>
+        <label>
+            <input type="checkbox" id="privacy">
+            Ich akzeptiere die <a href="datenschutz.html" target="_blank">Datenschutzerklärung</a>
+        </label>
 
-            <button type="submit">Registrieren</button>
-        </form>
+        <button onclick="register()">Registrieren</button>
+    </div>
+
+    <!-- CODE -->
+    <div id="verify" class="hidden">
+        <input id="code" placeholder="6-stelliger Code">
+        <button onclick="verify()">Bestätigen</button>
     </div>
 </div>
 
