@@ -1,71 +1,44 @@
 body {
-    background: #0f172a;
-    font-family: Arial, sans-serif;
-    color: white;
+    background:#0f172a;
+    font-family:Arial;
+    color:white;
 }
 
-.container {
-    width: 420px;
-    margin: 80px auto;
-    background: #1e293b;
-    padding: 25px;
-    border-radius: 12px;
+.box {
+    width:420px;
+    margin:80px auto;
+    background:#1e293b;
+    padding:25px;
+    border-radius:10px;
 }
 
-h1, h2 {
-    text-align: center;
-}
-
-.tabs {
-    display: flex;
-    margin-bottom: 20px;
-}
-
-.tabs button {
-    flex: 1;
-    padding: 10px;
-    background: #334155;
-    border: none;
-    color: white;
-    cursor: pointer;
-}
-
-.tabs button.active {
-    background: #3b82f6;
-}
-
-.tab-content {
-    margin-top: 15px;
-}
-
-.hidden {
-    display: none;
-}
-
-form input {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border-radius: 6px;
-    border: none;
+input, button {
+    width:100%;
+    padding:10px;
+    margin:8px 0;
+    border-radius:5px;
+    border:none;
 }
 
 button {
-    width: 100%;
-    padding: 10px;
-    background: #3b82f6;
-    border: none;
-    color: white;
-    border-radius: 6px;
-    cursor: pointer;
+    background:#3b82f6;
+    color:white;
+    cursor:pointer;
 }
 
-.checkbox {
-    font-size: 14px;
-    margin-bottom: 10px;
+.tabs {
+    display:flex;
 }
 
-.checkbox a {
-    color: #60a5fa;
-    text-decoration: underline;
+.tabs button {
+    flex:1;
+    background:#334155;
+}
+
+.tabs button.active {
+    background:#3b82f6;
+}
+
+.hidden {
+    display:none;
 }
